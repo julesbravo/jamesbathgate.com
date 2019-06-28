@@ -11,7 +11,7 @@
   </p>
 
   <h2>Contact</h2>
-
+  <h3 class="error">This form doesn't actually work, yet. Reach out to me on LinkedIn instead.</h3>
   <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/success/" v-on:submit.prevent="handleSubmit">
     <input type="hidden" name="form-name" value="contact" />
     <p>
@@ -75,5 +75,9 @@ export default {
 form textarea.message {
   width: 100%;
   height: 200px;
+}
+
+h3.error {
+  color: red;
 }
 </style>
