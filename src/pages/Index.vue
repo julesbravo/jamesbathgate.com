@@ -12,7 +12,7 @@
 
   <h2>Contact</h2>
 
-  <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+  <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/success/" v-on:submit.prevent="handleSubmit">
     <input type="hidden" name="form-name" value="contact" />
     <p>
       <label>Email: <input type="text" name="name" /></label>
